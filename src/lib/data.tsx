@@ -13,11 +13,44 @@ export const links = [
 
 export const projectsData = [
   {
-    image: '/images/image-colorization.webp',
+    image: 'icon:bus',
+    title: 'CV-Based Passenger Bus Management',
+    description:
+      'Smart transportation solution for real-time passenger monitoring and route optimization. Deployed on Orange Pi 5 Pro with edge computing capabilities, reducing operational costs by 30% through intelligent analytics.',
+    technologies: ['Python', 'OpenCV', 'TensorFlow', 'Orange Pi', 'MQTT'],
+    links: {
+      github: '',
+      githubApi: '',
+    },
+  },
+  {
+    image: 'icon:eye',
+    title: 'Bus Driver Drowsiness Detection',
+    description:
+      'Life-saving AI system that monitors driver alertness in real-time using computer vision. Features eye aspect ratio monitoring, head pose estimation, and instant alert mechanisms with 96% detection accuracy.',
+    technologies: ['Python', 'OpenCV', 'TensorFlow', 'dlib', 'RPi'],
+    links: {
+      github: '',
+      githubApi: '',
+    },
+  },
+  {
+    image: 'icon:drift',
+    title: 'Concept Drift Detection of Big Data Environments',
+    description:
+      'Advanced machine learning system for detecting and adapting to concept drift in streaming big data environments. Implements ensemble methods and adaptive algorithms to maintain model accuracy over time, handling data distribution changes in real-time analytics pipelines.',
+    technologies: ['Python', 'PySpark', 'Kafka', 'scikit-learn', 'MLflow'],
+    links: {
+      github: '',
+      githubApi: '',
+    },
+  },
+  {
+    image: '/images/project-1.webp',
     title: 'Deep Learning–Based Image Colorization',
     description:
-      'Automatically colorizes black-and-white images using a convolutional neural network trained on paired datasets.',
-    technologies: ['Python', 'TensorFlow', 'Keras', 'OpenCV'],
+      'An advanced neural network system that automatically transforms black-and-white images into vivid color photos. Uses CNN architecture trained on 100K+ image pairs, achieving 95% accuracy in natural color reproduction.',
+    technologies: ['Python', 'TensorFlow', 'Keras', 'OpenCV', 'NumPy'],
     links: {
       github: 'https://github.com/Senum2001/ImageColorizer',
       githubApi: 'https://api.github.com/repos/Senum2001/ImageColorizer',
@@ -46,33 +79,11 @@ export const projectsData = [
     },
   },
   {
-    image: '/images/bus-management.webp',
-    title: 'CV-Based Passenger Bus Management',
-    description:
-      'Real-time passenger tracking, monitoring, and route optimization on an Orange Pi 5 Pro.',
-    technologies: ['Python', 'OpenCV', 'TensorFlow', 'Orange Pi'],
-    links: {
-      github: '',
-      githubApi: '',
-    },
-  },
-  {
-    image: '/images/bus-drowsiness.webp',
-    title: 'Bus Driver Drowsiness Detection',
-    description:
-      'Alerts in real time when driver drowsiness patterns are detected via computer vision.',
-    technologies: ['Python', 'OpenCV', 'TensorFlow'],
-    links: {
-      github: '',
-      githubApi: '',
-    },
-  },
-  {
-    image: '/images/atms.webp',
+    image: 'icon:traffic',
     title: 'Automated Traffic Management System (ATMS)',
     description:
-      'Uses CV and ML to monitor traffic flows and optimize signal timings in real time.',
-    technologies: ['Python', 'OpenCV', 'Pandas', 'scikit-learn'],
+      'Intelligent traffic control system using ML algorithms for dynamic signal optimization. Processes real-time traffic data to reduce congestion by 40%, integrating vehicle detection and flow prediction models.',
+    technologies: ['Python', 'OpenCV', 'Pandas', 'scikit-learn', 'YOLOv5'],
     links: {
       github:
         'https://github.com/Senum2001/Automated-Traffic-Management-System',
@@ -228,4 +239,10 @@ export const skillsData = [
   { icon: <Icons.react className="size-12" />, label: 'React' },
   { icon: <Icons.typescript className="size-12" />, label: 'TypeScript' },
   { icon: <Icons.tailwind className="size-12" />, label: 'Tailwind CSS' },
+  { icon: <Icons.python className="size-12" />, label: 'Python' },
+  { icon: <Icons.pyspark className="size-12" />, label: 'PySpark' },
+  { icon: <Icons.azure className="size-12" />, label: 'Azure' },
+  { icon: <Icons.aws className="size-12" />, label: 'AWS MLflow' },
+  { icon: <Icons.java className="size-12" />, label: 'Java' },
+  { icon: <Icons.cpp className="size-12" />, label: 'C++' },
 ] as const;
