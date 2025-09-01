@@ -5,20 +5,25 @@ import { TFormSchema } from '@/lib/form-schema';
 
 export const sendEmailAction = async ({ email, message }: TFormSchema) => {
   try {
-    const response = await fetch(`https://formspree.io/f/${env.FORMSPREE_FORM_ID}`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Accept': 'application/json',
-      },
-      body: JSON.stringify({
-        email: email,
-        message: message,
-      }),
-    });
+    const response = await fetch(
+      `https://formspree.io/f/${env.FORMSPREE_FORM_ID}`,
+      {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+        body: JSON.stringify({
+          email: email,
+          message: message,
+        }),
+      }
+    );
 
     if (!response.ok) {
-      throw new Error(`Formspree error: ${response.status} ${response.statusText}`);
+      throw new Error(
+        `Formspree error: ${response.status} ${response.statusText}`
+      );
     }
 
     return {

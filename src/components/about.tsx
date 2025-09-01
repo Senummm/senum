@@ -14,27 +14,32 @@ export const About = () => {
     <motion.section
       ref={ref}
       id="about"
-      className="my-10 flex w-full scroll-mt-28 flex-col items-center md:mb-20"
+      className="relative my-10 flex w-full scroll-mt-28 flex-col items-center md:mb-20"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
     >
+      {/* Background glow */}
+      <div className="from-primary/5 via-secondary/5 to-accent/5 absolute inset-0 -z-10 rounded-3xl bg-gradient-to-r blur-3xl"></div>
+
       <SectionHeading heading="About Me" />
-      <div className="-mt-5 flex max-w-2xl flex-col items-center text-center leading-7 md:flex-row md:items-start md:space-x-4 md:text-left">
+      <div className="glass -mt-5 flex max-w-3xl flex-col items-center rounded-2xl p-6 text-center leading-7 md:flex-row md:items-start md:space-x-4 md:text-left">
         <Image
           src="/images/my.jpg"
           alt="Senum Dodangoda"
           width={160}
           height={160}
-          className="mb-6 rounded-full object-cover md:mb-0"
+          className="mb-6 rounded-full object-cover transition-all duration-300 hover:scale-105 md:mb-0"
           priority
         />
         <div>
           <p className="mb-4">
-            I’m <span className="font-semibold">Senum Dodangoda</span>, based in
-            Kalutara, Sri Lanka. I’m passionate about exploring innovations and
-            research in Machine Learning, Deep Learning, Computer Vision, Signal
-            Processing, Generative AI, Explainable AI, TinyML, and IoT.
+            I’m{' '}
+            <span className="text-primary font-semibold">Senum Dodangoda</span>,
+            based in Kalutara, Sri Lanka. I’m passionate about exploring
+            innovations and research in Machine Learning, Deep Learning,
+            Computer Vision, Signal Processing, Generative AI, Explainable AI,
+            TinyML, and IoT.
           </p>
           <p className="mb-4">
             I worked as a Machine Learning Engineer Intern at OCTAVE – John

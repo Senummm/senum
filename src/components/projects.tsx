@@ -1,7 +1,7 @@
 'use client';
 
-import { motion } from 'framer-motion';
 import { useState } from 'react';
+import { motion } from 'framer-motion';
 
 import { Project } from '@/components/project';
 import { SectionHeading } from '@/components/section-heading';
@@ -15,7 +15,9 @@ export const Projects = () => {
   const [visibleProjects, setVisibleProjects] = useState(PROJECTS_PER_PAGE);
 
   const showMoreProjects = () => {
-    setVisibleProjects((prev) => Math.min(prev + PROJECTS_PER_PAGE, projectsData.length));
+    setVisibleProjects((prev) =>
+      Math.min(prev + PROJECTS_PER_PAGE, projectsData.length)
+    );
   };
 
   const hasMoreProjects = visibleProjects < projectsData.length;
@@ -44,7 +46,11 @@ export const Projects = () => {
       {/* Projects Grid */}
       <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
         {projectsData.slice(0, visibleProjects).map((project, index) => (
-          <Project key={`${project.title}-${index}`} project={project} index={index} />
+          <Project
+            key={`${project.title}-${index}`}
+            project={project}
+            index={index}
+          />
         ))}
       </div>
 
@@ -58,9 +64,10 @@ export const Projects = () => {
         >
           <button
             onClick={showMoreProjects}
-            className="rounded-lg bg-primary px-6 py-3 text-primary-foreground font-medium transition-all duration-300 hover:bg-primary/90 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+            className="bg-primary text-primary-foreground hover:bg-primary/90 focus:ring-primary rounded-lg px-6 py-3 font-medium transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2"
           >
-            Load More Projects ({projectsData.length - visibleProjects} remaining)
+            Load More Projects ({projectsData.length - visibleProjects}{' '}
+            remaining)
           </button>
         </motion.div>
       )}
@@ -72,8 +79,9 @@ export const Projects = () => {
         transition={{ delay: 0.3 }}
         className="mt-6 text-center"
       >
-        <p className="text-sm text-muted-foreground">
-          Showing {Math.min(visibleProjects, projectsData.length)} of {projectsData.length} projects
+        <p className="text-muted-foreground text-sm">
+          Showing {Math.min(visibleProjects, projectsData.length)} of{' '}
+          {projectsData.length} projects
         </p>
       </motion.div>
     </section>

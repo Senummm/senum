@@ -39,7 +39,7 @@ export const Contact = () => {
     <motion.section
       ref={ref}
       id="contact"
-      className="my-10 w-full scroll-mt-28 md:mb-20"
+      className="relative my-10 w-full scroll-mt-28 md:mb-20"
       initial={{
         opacity: 0,
       }}
@@ -53,6 +53,8 @@ export const Contact = () => {
         once: true,
       }}
     >
+      {/* Background glow */}
+      <div className="from-primary/5 via-secondary/5 to-accent/5 absolute inset-0 -z-10 rounded-3xl bg-gradient-to-br blur-3xl"></div>
       <SectionHeading
         heading="Get In Touch"
         content={
@@ -73,9 +75,9 @@ export const Contact = () => {
       />
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="flex flex-col items-center gap-5"
+        className="glass glow-hover mx-auto flex w-full max-w-3xl flex-col items-center gap-5 rounded-2xl p-8"
       >
-        <div className="w-full max-w-xl">
+        <div className="w-full max-w-2xl">
           <label
             htmlFor="email"
             className={cn(
@@ -91,7 +93,7 @@ export const Contact = () => {
             placeholder="hello@gmail.com"
             {...register('email')}
             className={cn(
-              'border-input bg-background ring-offset-background placeholder:text-muted-foreground focus-visible:ring-ring mt-2 flex h-10 w-full rounded-md border px-3 py-2 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50',
+              'border-input bg-background/50 ring-offset-background placeholder:text-muted-foreground focus-visible:ring-ring glass glow-hover mt-2 flex h-10 w-full rounded-md border px-3 py-2 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50',
               errors.email?.message && 'border-destructive'
             )}
           />
@@ -101,7 +103,7 @@ export const Contact = () => {
             </p>
           )}
         </div>
-        <div className="w-full max-w-xl">
+        <div className="w-full max-w-2xl">
           <label
             htmlFor="message"
             className={cn(
@@ -116,7 +118,7 @@ export const Contact = () => {
             placeholder="Hello! What's up?"
             {...register('message')}
             className={cn(
-              'border-input bg-background ring-offset-background placeholder:text-muted-foreground focus-visible:ring-ring mt-2 flex h-60 w-full resize-none rounded-md border px-3 py-2 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50',
+              'border-input bg-background/50 ring-offset-background placeholder:text-muted-foreground focus-visible:ring-ring glass glow-hover mt-2 flex h-60 w-full resize-none rounded-md border px-3 py-2 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50',
               errors.message?.message && 'border-destructive'
             )}
           ></textarea>
@@ -126,7 +128,10 @@ export const Contact = () => {
             </p>
           )}
         </div>
-        <Button size="lg">
+        <Button
+          size="lg"
+          className="glow-hover glass border-primary/50 hover:border-primary"
+        >
           Submit <Icons.arrowRight className="ml-2 size-4" />
         </Button>
       </form>

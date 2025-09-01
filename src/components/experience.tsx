@@ -52,8 +52,11 @@ export const Experience = () => {
     <section
       ref={sectionRef}
       id="experience"
-      className="my-10 scroll-mt-28 md:mb-20"
+      className="relative my-10 scroll-mt-28 md:mb-20"
     >
+      {/* Background glow */}
+      <div className="from-secondary/5 to-primary/5 absolute inset-0 -z-10 rounded-3xl bg-gradient-to-l via-transparent blur-3xl"></div>
+
       <SectionHeading
         heading="My Experience"
         content="Professional roles and projects I’ve contributed to."
@@ -65,7 +68,7 @@ export const Experience = () => {
               key={company}
               className="relative pl-8 [&:not(:last-child)]:pb-10"
             >
-              <div className="bg-muted absolute left-0 top-2.5 h-full w-[2px] first:top-6 first:h-[calc(100%-24px)]">
+              <div className="from-primary to-secondary absolute left-0 top-2.5 h-full w-[2px] bg-gradient-to-b first:top-6 first:h-[calc(100%-24px)]">
                 <div className="border-primary bg-background absolute left-[-5px] top-0 size-3 rounded-full border-2" />
               </div>
               <motion.div
@@ -73,17 +76,19 @@ export const Experience = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.175 }}
                 viewport={{ once: true }}
-                className={cn('space-y-3 opacity-0')}
+                className={cn('glass space-y-3 rounded-2xl p-6 opacity-0')}
               >
                 <div className="flex items-center gap-3">
-                  <div className="flex size-9 shrink-0 items-center justify-center rounded-full border">
-                    <Icons.building className="size-5" />
+                  <div className="glass border-primary/50 flex size-9 shrink-0 items-center justify-center rounded-full border">
+                    <Icons.building className="text-primary size-5" />
                   </div>
-                  <span className="text-lg font-semibold">{company}</span>
+                  <span className="text-primary text-lg font-semibold">
+                    {company}
+                  </span>
                 </div>
                 <div>
                   <h3 className="text-xl font-medium">{title}</h3>
-                  <div className="mt-1 flex items-center gap-2 text-sm">
+                  <div className="text-secondary mt-1 flex items-center gap-2 text-sm">
                     <Icons.calendar className="size-4" />
                     <span>{period}</span>
                   </div>
@@ -97,7 +102,7 @@ export const Experience = () => {
                   {technologies.map((tech) => (
                     <span
                       key={tech}
-                      className="rounded-full border px-3 py-1 text-sm"
+                      className="glass border-accent/50 text-accent rounded-full border px-3 py-1 text-sm"
                     >
                       {tech}
                     </span>

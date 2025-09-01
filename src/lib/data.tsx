@@ -242,7 +242,8 @@ export const skillsData = [
   { icon: <Icons.python className="size-12" />, label: 'Python' },
   { icon: <Icons.pyspark className="size-12" />, label: 'PySpark' },
   { icon: <Icons.azure className="size-12" />, label: 'Azure' },
-  { icon: <Icons.aws className="size-12" />, label: 'AWS MLflow' },
+  { icon: <Icons.aws className="size-12" />, label: 'AWS' },
+  { icon: <Icons.python className="size-12" />, label: 'MLflow' },
   { icon: <Icons.java className="size-12" />, label: 'Java' },
   { icon: <Icons.cpp className="size-12" />, label: 'C++' },
 ] as const;

@@ -6,7 +6,6 @@ import { Footer } from '@/components/footer';
 import { Header } from '@/components/header';
 import { Intro } from '@/components/intro';
 import { Projects } from '@/components/projects';
-import { SectionDivider } from '@/components/section-divider';
 import { SkillsSection } from '@/components/skills-section';
 import { ThemeToggle } from '@/components/theme-toggle';
 
@@ -16,7 +15,6 @@ const HomePage = async () => {
       <div className="container flex flex-col items-center">
         <Header />
         <Intro />
-        <SectionDivider />
         <About />
         <SkillsSection />
         <Experience />
