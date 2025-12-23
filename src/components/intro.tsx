@@ -53,12 +53,16 @@ export const Intro = () => {
         animate={{ opacity: 1, y: 0 }}
         className="font-heading from-primary via-secondary to-accent max-w-5xl bg-gradient-to-r bg-clip-text text-4xl font-extrabold text-transparent md:text-5xl"
       >
-        Hi, I’m{' '}
-        <span className="from-primary to-secondary bg-gradient-to-r bg-clip-text text-transparent">
-          Senum
+        <span className="typing-container">
+          Hi, I'm{' '}
+          <span className="from-primary to-secondary bg-gradient-to-r bg-clip-text text-transparent">
+            Senum
+          </span>
         </span>
         <br />
-        Machine Learning & AI Engineer
+        <span className="typing-container" style={{ animationDelay: '2s' }}>
+          Machine Learning & AI Engineer
+        </span>
       </motion.h1>
 
       {/* Subheading / summary */}
@@ -97,7 +101,7 @@ export const Intro = () => {
           asChild
         >
           <a
-            href="https://drive.google.com/file/d/1_YJ60vfBxHdQ6TH--cX1we883EviEVtl/view?usp=sharing"
+            href="https://drive.google.com/file/d/1UMJ23YYYa9cz4hvF8Pt6ZJSef0bNDrmO/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
           >

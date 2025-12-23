@@ -2,6 +2,7 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
 
 import { skillsData } from '@/lib/data';
 
@@ -21,8 +22,14 @@ export function SkillsSection() {
               key={index}
               className="glass flex flex-col items-center space-y-2 rounded-xl p-4 transition-all duration-300 hover:-translate-y-2 hover:scale-105"
             >
-              <div className="size-12 transition-transform duration-200 hover:scale-110">
-                {skill.icon}
+              <div className="relative size-12 transition-transform duration-200 hover:scale-110">
+                <Image
+                  src={skill.icon}
+                  alt={skill.label}
+                  fill
+                  className="object-contain"
+                  unoptimized
+                />
               </div>
               <span className="text-primary text-center text-sm font-medium">
                 {skill.label}

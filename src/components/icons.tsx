@@ -446,4 +446,149 @@ export const Icons = {
       </text>
     </svg>
   ),
+  tensorflow: (props: LucideProps) => (
+    <svg viewBox="0 0 48 48" {...props}>
+      <path fill="#FF6F00" d="M24 4L6 14v20l18 10 18-10V14L24 4z" />
+      <path fill="#FF9800" d="M24 4v40l18-10V14L24 4z" />
+      <path fill="#FFB300" d="M24 14v10l8 4.5V18l-8-4z" />
+      <path fill="#FF6F00" d="M24 14l-8 4v10l8 4.5V14z" />
+      <path fill="#FFCA28" d="M24 24v10l8-4.5V24l-8-4z" />
+      <path fill="#FF9800" d="M24 24l-8 4v5.5l8 4.5V24z" />
+    </svg>
+  ),
+  keras: (props: LucideProps) => (
+    <svg viewBox="0 0 48 48" {...props}>
+      <path fill="#D32F2F" d="M8 4h32v40H8z" />
+      <path fill="#fff" d="M16 12v24h4v-8l6 8h5l-7.5-10L30 16h-5l-5 7v-11h-4z" />
+    </svg>
+  ),
+  pytorch: (props: LucideProps) => (
+    <svg viewBox="0 0 48 48" {...props}>
+      <path
+        fill="#EE4C2C"
+        d="M24 4c-11 0-20 9-20 20s9 20 20 20 20-9 20-20S35 4 24 4zm0 36c-8.8 0-16-7.2-16-16S15.2 8 24 8s16 7.2 16 16-7.2 16-16 16z"
+      />
+      <circle cx="24" cy="24" r="8" fill="#EE4C2C" />
+      <circle cx="32" cy="12" r="3" fill="#EE4C2C" />
+    </svg>
+  ),
+  opencv: (props: LucideProps) => (
+    <svg viewBox="0 0 48 48" {...props}>
+      <circle cx="14" cy="30" r="10" fill="#FF0000" />
+      <circle cx="34" cy="30" r="10" fill="#00FF00" />
+      <circle cx="24" cy="14" r="10" fill="#0000FF" />
+      <circle cx="14" cy="30" r="6" fill="#fff" />
+      <circle cx="34" cy="30" r="6" fill="#fff" />
+      <circle cx="24" cy="14" r="6" fill="#fff" />
+    </svg>
+  ),
+  scikitlearn: (props: LucideProps) => (
+    <svg viewBox="0 0 48 48" {...props}>
+      <path fill="#F89939" d="M24 4L6 14v20l18 10 18-10V14L24 4z" />
+      <path fill="#3499CD" d="M24 14l-10 6v12l10 6 10-6V20l-10-6z" />
+      <circle cx="24" cy="26" r="6" fill="#fff" />
+    </svg>
+  ),
+  pandas: (props: LucideProps) => (
+    <svg viewBox="0 0 48 48" {...props}>
+      <rect x="10" y="6" width="6" height="12" fill="#150458" />
+      <rect x="10" y="22" width="6" height="4" fill="#150458" />
+      <rect x="10" y="30" width="6" height="12" fill="#150458" />
+      <rect x="21" y="14" width="6" height="20" fill="#150458" />
+      <rect x="32" y="6" width="6" height="12" fill="#E70488" />
+      <rect x="32" y="22" width="6" height="4" fill="#E70488" />
+      <rect x="32" y="30" width="6" height="12" fill="#E70488" />
+    </svg>
+  ),
+  numpy: (props: LucideProps) => (
+    <svg viewBox="0 0 48 48" {...props}>
+      <path fill="#4DABCF" d="M24 4L6 14l18 10 18-10L24 4z" />
+      <path fill="#4D77CF" d="M6 14v20l18 10V24L6 14z" />
+      <path fill="#4DABCF" d="M42 14L24 24v20l18-10V14z" />
+      <path fill="#fff" d="M24 18l-6 4v8l6 4 6-4v-8l-6-4z" opacity="0.5" />
+    </svg>
+  ),
+  git: (props: LucideProps) => (
+    <svg viewBox="0 0 48 48" {...props}>
+      <path
+        fill="#F4511E"
+        d="M46.4 21.6L26.4 1.6c-.8-.8-2-.8-2.8 0l-4.1 4.1 5.2 5.2c.6-.2 1.3-.3 2-.3 2.2 0 4 1.8 4 4 0 .7-.1 1.4-.3 2l5 5c.6-.2 1.3-.3 2-.3 2.2 0 4 1.8 4 4s-1.8 4-4 4-4-1.8-4-4c0-.7.1-1.4.3-2l-5-5c-.1 0-.2.1-.3.1v10.5c1.2.5 2 1.7 2 3 0 2.2-1.8 4-4 4s-4-1.8-4-4c0-1.4.8-2.6 2-3.1V18.1c-1.2-.5-2-1.7-2-3.1 0-.7.1-1.4.3-2l-5.2-5.2-13.7 13.6c-.8.8-.8 2 0 2.8l20 20c.8.8 2 .8 2.8 0l19.9-19.9c.8-.8.8-2 0-2.8z"
+      />
+    </svg>
+  ),
+  linux: (props: LucideProps) => (
+    <svg viewBox="0 0 48 48" {...props}>
+      <path
+        fill="#FFC107"
+        d="M24 4c-5.5 0-10 4.5-10 10v10c0 5.5 4.5 10 10 10s10-4.5 10-10V14c0-5.5-4.5-10-10-10z"
+      />
+      <path fill="#424242" d="M20 16c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm4 0c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2z" />
+      <path fill="#795548" d="M14 34c-2 4-4 8-4 10h8l2-10h-6zm20 0c2 4 4 8 4 10h-8l-2-10h6z" />
+      <ellipse cx="24" cy="26" rx="4" ry="2" fill="#FF9800" />
+    </svg>
+  ),
+  mlflow: (props: LucideProps) => (
+    <svg viewBox="0 0 48 48" {...props}>
+      <path
+        fill="#0194E2"
+        d="M24 4C12.95 4 4 12.95 4 24s8.95 20 20 20 20-8.95 20-20S35.05 4 24 4zm0 36c-8.82 0-16-7.18-16-16S15.18 8 24 8s16 7.18 16 16-7.18 16-16 16z"
+      />
+      <path fill="#0194E2" d="M24 12l-8 12h6v12l8-12h-6V12z" />
+    </svg>
+  ),
+  fastapi: (props: LucideProps) => (
+    <svg viewBox="0 0 48 48" {...props}>
+      <path fill="#009688" d="M24 4L6 14v20l18 10 18-10V14L24 4z" />
+      <path fill="#fff" d="M24 14l-8 16h6v8l8-16h-6v-8z" />
+    </svg>
+  ),
+  flask: (props: LucideProps) => (
+    <svg viewBox="0 0 48 48" {...props}>
+      <path
+        fill="#424242"
+        d="M20 6h8v6h4l-8 30h-4L12 12h4V6h4zm4 2h-4v4h4V8z"
+      />
+      <ellipse cx="24" cy="40" rx="10" ry="4" fill="#757575" />
+    </svg>
+  ),
+  raspberrypi: (props: LucideProps) => (
+    <svg viewBox="0 0 48 48" {...props}>
+      <ellipse cx="24" cy="24" rx="18" ry="16" fill="#C51A4A" />
+      <circle cx="16" cy="20" r="4" fill="#75A928" />
+      <circle cx="32" cy="20" r="4" fill="#75A928" />
+      <circle cx="24" cy="28" r="4" fill="#75A928" />
+      <circle cx="18" cy="32" r="3" fill="#75A928" />
+      <circle cx="30" cy="32" r="3" fill="#75A928" />
+    </svg>
+  ),
+  mqtt: (props: LucideProps) => (
+    <svg viewBox="0 0 48 48" {...props}>
+      <path fill="#660066" d="M24 4L6 14v20l18 10 18-10V14L24 4z" />
+      <circle cx="16" cy="20" r="4" fill="#fff" />
+      <circle cx="32" cy="20" r="4" fill="#fff" />
+      <circle cx="24" cy="32" r="4" fill="#fff" />
+      <path fill="#fff" d="M16 20v8l8 4M32 20v8l-8 4" stroke="#660066" strokeWidth="2" />
+    </svg>
+  ),
+  huggingface: (props: LucideProps) => (
+    <svg viewBox="0 0 48 48" {...props}>
+      <circle cx="24" cy="24" r="20" fill="#FFD21E" />
+      <circle cx="16" cy="20" r="4" fill="#fff" />
+      <circle cx="32" cy="20" r="4" fill="#fff" />
+      <circle cx="16" cy="20" r="2" fill="#000" />
+      <circle cx="32" cy="20" r="2" fill="#000" />
+      <path fill="none" stroke="#000" strokeWidth="2" strokeLinecap="round" d="M18 32c2 2 4 3 6 3s4-1 6-3" />
+      <ellipse cx="12" cy="22" rx="2" ry="4" fill="#FF9D00" />
+      <ellipse cx="36" cy="22" rx="2" ry="4" fill="#FF9D00" />
+    </svg>
+  ),
+  langchain: (props: LucideProps) => (
+    <svg viewBox="0 0 48 48" {...props}>
+      <circle cx="24" cy="24" r="20" fill="#1C3C3C" />
+      <path fill="#fff" d="M16 12v24l16-12-16-12z" />
+      <circle cx="16" cy="24" r="3" fill="#00D9FF" />
+      <circle cx="32" cy="24" r="3" fill="#00D9FF" />
+    </svg>
+  ),
 };
+
