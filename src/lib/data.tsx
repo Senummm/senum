@@ -1,7 +1,5 @@
 // src/lib/data.tsx
 
-import { Icons } from '@/components/icons';
-
 export const links = [
   { name: 'Home', hash: '#home' },
   { name: 'About', hash: '#about' },
@@ -236,24 +234,84 @@ export const experiencesData = [
 ] as const;
 
 export const skillsData = [
-  { icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg', label: 'Python' },
-  { icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg', label: 'TensorFlow' },
-  { icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg', label: 'PyTorch' },
-  { icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg', label: 'OpenCV' },
-  { icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg', label: 'Scikit-Learn' },
-  { icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apachespark/apachespark-original.svg', label: 'PySpark' },
-  { icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg', label: 'Pandas' },
-  { icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg', label: 'NumPy' },
-  { icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/keras/keras-original.svg', label: 'Keras' },
-  { icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mlflow/mlflow-original.svg', label: 'MLflow' },
-  { icon: 'https://huggingface.co/front/assets/huggingface_logo-noborder.svg', label: 'Hugging Face' },
-  { icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/langchain/langchain-original.svg', label: 'LangChain' },
-  { icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg', label: 'Azure' },
-  { icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg', label: 'AWS' },
-  { icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg', label: 'Docker' },
-  { icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg', label: 'FastAPI' },
-  { icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg', label: 'Git' },
-  { icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/raspberrypi/raspberrypi-original.svg', label: 'Raspberry Pi' },
-  { icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg', label: 'C++' },
-  { icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg', label: 'Linux' },
+  {
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg',
+    label: 'Python',
+  },
+  {
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg',
+    label: 'TensorFlow',
+  },
+  {
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg',
+    label: 'PyTorch',
+  },
+  {
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg',
+    label: 'OpenCV',
+  },
+  {
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg',
+    label: 'Scikit-Learn',
+  },
+  {
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apachespark/apachespark-original.svg',
+    label: 'PySpark',
+  },
+  {
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg',
+    label: 'Pandas',
+  },
+  {
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg',
+    label: 'NumPy',
+  },
+  {
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/keras/keras-original.svg',
+    label: 'Keras',
+  },
+  {
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mlflow/mlflow-original.svg',
+    label: 'MLflow',
+  },
+  {
+    icon: 'https://huggingface.co/front/assets/huggingface_logo-noborder.svg',
+    label: 'Hugging Face',
+  },
+  {
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/langchain/langchain-original.svg',
+    label: 'LangChain',
+  },
+  {
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg',
+    label: 'Azure',
+  },
+  {
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg',
+    label: 'AWS',
+  },
+  {
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg',
+    label: 'Docker',
+  },
+  {
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg',
+    label: 'FastAPI',
+  },
+  {
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg',
+    label: 'Git',
+  },
+  {
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/raspberrypi/raspberrypi-original.svg',
+    label: 'Raspberry Pi',
+  },
+  {
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg',
+    label: 'C++',
+  },
+  {
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg',
+    label: 'Linux',
+  },
 ] as const;
