@@ -459,7 +459,10 @@ export const Icons = {
   keras: (props: LucideProps) => (
     <svg viewBox="0 0 48 48" {...props}>
       <path fill="#D32F2F" d="M8 4h32v40H8z" />
-      <path fill="#fff" d="M16 12v24h4v-8l6 8h5l-7.5-10L30 16h-5l-5 7v-11h-4z" />
+      <path
+        fill="#fff"
+        d="M16 12v24h4v-8l6 8h5l-7.5-10L30 16h-5l-5 7v-11h-4z"
+      />
     </svg>
   ),
   pytorch: (props: LucideProps) => (
@@ -522,8 +525,14 @@ export const Icons = {
         fill="#FFC107"
         d="M24 4c-5.5 0-10 4.5-10 10v10c0 5.5 4.5 10 10 10s10-4.5 10-10V14c0-5.5-4.5-10-10-10z"
       />
-      <path fill="#424242" d="M20 16c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm4 0c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2z" />
-      <path fill="#795548" d="M14 34c-2 4-4 8-4 10h8l2-10h-6zm20 0c2 4 4 8 4 10h-8l-2-10h6z" />
+      <path
+        fill="#424242"
+        d="M20 16c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm4 0c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2z"
+      />
+      <path
+        fill="#795548"
+        d="M14 34c-2 4-4 8-4 10h8l2-10h-6zm20 0c2 4 4 8 4 10h-8l-2-10h6z"
+      />
       <ellipse cx="24" cy="26" rx="4" ry="2" fill="#FF9800" />
     </svg>
   ),
@@ -567,7 +576,12 @@ export const Icons = {
       <circle cx="16" cy="20" r="4" fill="#fff" />
       <circle cx="32" cy="20" r="4" fill="#fff" />
       <circle cx="24" cy="32" r="4" fill="#fff" />
-      <path fill="#fff" d="M16 20v8l8 4M32 20v8l-8 4" stroke="#660066" strokeWidth="2" />
+      <path
+        fill="#fff"
+        d="M16 20v8l8 4M32 20v8l-8 4"
+        stroke="#660066"
+        strokeWidth="2"
+      />
     </svg>
   ),
   huggingface: (props: LucideProps) => (
@@ -577,7 +591,13 @@ export const Icons = {
       <circle cx="32" cy="20" r="4" fill="#fff" />
       <circle cx="16" cy="20" r="2" fill="#000" />
       <circle cx="32" cy="20" r="2" fill="#000" />
-      <path fill="none" stroke="#000" strokeWidth="2" strokeLinecap="round" d="M18 32c2 2 4 3 6 3s4-1 6-3" />
+      <path
+        fill="none"
+        stroke="#000"
+        strokeWidth="2"
+        strokeLinecap="round"
+        d="M18 32c2 2 4 3 6 3s4-1 6-3"
+      />
       <ellipse cx="12" cy="22" rx="2" ry="4" fill="#FF9D00" />
       <ellipse cx="36" cy="22" rx="2" ry="4" fill="#FF9D00" />
     </svg>
@@ -591,4 +611,3 @@ export const Icons = {
     </svg>
   ),
 };
-

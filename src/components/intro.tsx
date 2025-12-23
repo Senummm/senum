@@ -54,7 +54,7 @@ export const Intro = () => {
         className="font-heading from-primary via-secondary to-accent max-w-5xl bg-gradient-to-r bg-clip-text text-4xl font-extrabold text-transparent md:text-5xl"
       >
         <span className="typing-container">
-          Hi, I'm{' '}
+          Hi, I&apos;m{' '}
           <span className="from-primary to-secondary bg-gradient-to-r bg-clip-text text-transparent">
             Senum
           </span>
