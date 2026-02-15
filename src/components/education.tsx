@@ -10,26 +10,20 @@ import { cn } from '@/lib/utils';
 const educationData = [
   {
     institution: 'University of Moratuwa',
-    location: 'Moratuwa, Sri Lanka',
+    location: 'Sri Lanka',
     degree: 'B.Sc. in Electronic and Telecommunication Engineering',
-    cgpa: '3.62/4.00',
-    period: 'Feb 2022 – Present',
-    description: [],
+    cgpa: '3.68/4.00 (up to Semester 7)',
+    period: 'Jun 2022 - Present',
+    description: [
+      'Relevant Coursework: Deep Learning for Vision, Pattern Recognition, Neural Networks, Software Design, Time Series and Stochastic Processes, Data Structures and Algorithms',
+    ],
   },
   {
     institution: 'C.W.W. Kannangara Central College',
     location: 'Mathugama, Sri Lanka',
     degree: 'Advanced Level - Physical Science (3As), Ordinary Level (9As)',
-    zScore: '2.1001',
+    zScore: '2.1001 (Top 1%)',
     period: '2007 – 2020',
-    description: [],
-  },
-  {
-    institution: 'ESOFT Metro Campus',
-    location: 'Kalutara, Sri Lanka',
-    degree: 'Diploma in English, Diploma in Information Technology',
-    achievements: 'Dual Medalist',
-    period: '2021',
     description: [],
   },
 ];
@@ -52,14 +46,12 @@ export function Education() {
       />
       <div className="relative max-w-screen-md">
         {educationData.map(
-          (
-            {
+          ({
               institution,
               location,
               degree,
               cgpa,
               zScore,
-              achievements,
               period,
               description,
             },
@@ -69,8 +61,8 @@ export function Education() {
               key={institution}
               className="relative pl-8 [&:not(:last-child)]:pb-10"
             >
-              <div className="from-accent to-primary glow absolute left-0 top-2.5 h-full w-[2px] bg-gradient-to-b first:top-6 first:h-[calc(100%-24px)]">
-                <div className="border-accent bg-background glow absolute left-[-5px] top-0 size-3 rounded-full border-2" />
+              <div className="from-accent to-primary absolute left-0 top-2.5 h-full w-[2px] bg-gradient-to-b first:top-6 first:h-[calc(100%-24px)]">
+                <div className="border-accent bg-background absolute left-[-5px] top-0 size-3 rounded-full border-2" />
               </div>
               <motion.div
                 initial={{ opacity: 0, y: 100 }}
@@ -78,14 +70,14 @@ export function Education() {
                 transition={{ delay: 0.175 * index }}
                 viewport={{ once: true }}
                 className={cn(
-                  'glass glow-hover space-y-3 rounded-2xl p-6 opacity-0'
+                  'glass space-y-3 rounded-2xl p-6 opacity-0'
                 )}
               >
                 <div className="flex items-center gap-3">
-                  <div className="glass border-accent/50 glow flex size-9 shrink-0 items-center justify-center rounded-full border">
+                  <div className="glass border-accent/50 flex size-9 shrink-0 items-center justify-center rounded-full border">
                     <Icons.building className="text-accent size-5" />
                   </div>
-                  <span className="text-accent neon-text text-lg font-semibold">
+                  <span className="text-accent text-lg font-semibold">
                     {institution}
                   </span>
                 </div>
@@ -94,9 +86,6 @@ export function Education() {
                   <p className="text-sm">{location}</p>
                   {cgpa && <p className="text-sm">CGPA: {cgpa}</p>}
                   {zScore && <p className="text-sm">Z-Score: {zScore}</p>}
-                  {achievements && (
-                    <p className="text-secondary text-sm">{achievements}</p>
-                  )}
                   <div className="text-primary mt-1 flex items-center gap-2 text-sm">
                     <Icons.calendar className="size-4" />
                     <span>{period}</span>

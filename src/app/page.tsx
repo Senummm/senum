@@ -1,4 +1,5 @@
 import { About } from '@/components/about';
+import { AwardsAndCertifications } from '@/components/awards-certifications';
 import { Contact } from '@/components/contact';
 import { Education } from '@/components/education';
 import { Experience } from '@/components/experience';
@@ -20,6 +21,7 @@ const HomePage = async () => {
         <Experience />
         <Education />
         <Projects />
+        <AwardsAndCertifications />
         <Contact />
         <Footer />
       </div>

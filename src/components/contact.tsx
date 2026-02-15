@@ -75,7 +75,7 @@ export const Contact = () => {
       />
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="glass glow-hover mx-auto flex w-full max-w-3xl flex-col items-center gap-5 rounded-2xl p-8"
+        className="glass mx-auto flex w-full max-w-3xl flex-col items-center gap-5 rounded-2xl p-8"
       >
         <div className="w-full max-w-2xl">
           <label
@@ -93,7 +93,7 @@ export const Contact = () => {
             placeholder="hello@gmail.com"
             {...register('email')}
             className={cn(
-              'border-input bg-background/50 ring-offset-background placeholder:text-muted-foreground focus-visible:ring-ring glass glow-hover mt-2 flex h-10 w-full rounded-md border px-3 py-2 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50',
+              'border-input bg-background/50 ring-offset-background placeholder:text-muted-foreground focus-visible:ring-ring glass mt-2 flex h-10 w-full rounded-md border px-3 py-2 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50',
               errors.email?.message && 'border-destructive'
             )}
           />
@@ -118,7 +118,7 @@ export const Contact = () => {
             placeholder="Hello! What's up?"
             {...register('message')}
             className={cn(
-              'border-input bg-background/50 ring-offset-background placeholder:text-muted-foreground focus-visible:ring-ring glass glow-hover mt-2 flex h-60 w-full resize-none rounded-md border px-3 py-2 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50',
+              'border-input bg-background/50 ring-offset-background placeholder:text-muted-foreground focus-visible:ring-ring glass mt-2 flex h-60 w-full resize-none rounded-md border px-3 py-2 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50',
               errors.message?.message && 'border-destructive'
             )}
           ></textarea>
@@ -130,7 +130,7 @@ export const Contact = () => {
         </div>
         <Button
           size="lg"
-          className="glow-hover glass border-primary/50 hover:border-primary"
+          className="glass border-primary/50 hover:border-primary"
         >
           Submit <Icons.arrowRight className="ml-2 size-4" />
         </Button>

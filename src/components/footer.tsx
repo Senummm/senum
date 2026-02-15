@@ -2,7 +2,7 @@ import { Button } from '@/components/button';
 
 export const Footer = () => {
   return (
-    <footer className="text-muted-foreground glass glow-hover mx-auto my-2 max-w-lg rounded-2xl p-4 text-center text-sm">
+    <footer className="text-muted-foreground glass mx-auto my-2 max-w-lg rounded-2xl p-4 text-center text-sm">
       © {new Date().getFullYear()}{' '}
       <Button
         variant="link"

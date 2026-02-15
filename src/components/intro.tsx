@@ -51,17 +51,16 @@ export const Intro = () => {
       <motion.h1
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
-        className="font-heading from-primary via-secondary to-accent max-w-5xl bg-gradient-to-r bg-clip-text text-4xl font-extrabold text-transparent md:text-5xl"
+        className="font-heading from-primary via-secondary to-accent mb-6 max-w-[90vw] px-4 bg-gradient-to-r bg-clip-text text-2xl font-extrabold text-transparent sm:max-w-3xl sm:text-3xl md:max-w-5xl md:text-4xl lg:text-5xl"
       >
-        <span className="typing-container">
+        <span className="typing-line-1">
           Hi, I&apos;m{' '}
           <span className="from-primary to-secondary bg-gradient-to-r bg-clip-text text-transparent">
             Senum
           </span>
         </span>
-        <br />
-        <span className="typing-container" style={{ animationDelay: '2s' }}>
-          Machine Learning & AI Engineer
+        <span className="typing-line-2">
+          AI | Machine Learning | DevOps
         </span>
       </motion.h1>
 
@@ -70,12 +69,12 @@ export const Intro = () => {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.1 }}
-        className="text-muted-foreground max-w-2xl text-lg leading-relaxed"
+        className="text-muted-foreground max-w-[90vw] px-4 text-base leading-relaxed sm:max-w-xl sm:text-base md:max-w-2xl md:text-lg"
       >
-        Based in Kalutara, Sri Lanka. I build scalable AI & ML solutions in
-        Python, TensorFlow, PySpark, and cloud platforms (Azure, AWS).
-        Passionate about Generative AI, Computer Vision, TinyML, and IoT
-        innovations.
+        Based in Kalutara, Sri Lanka. I explore innovations and research in
+        Machine Learning, Deep Learning, MLOps, DevOps, GenAI, and
+        Retrieval-Augmented Generation (RAG) systems with strong teamwork and
+        communication skills.
       </motion.p>
 
       {/* Call-to-action buttons */}
@@ -101,7 +100,7 @@ export const Intro = () => {
           asChild
         >
           <a
-            href="https://drive.google.com/file/d/1UMJ23YYYa9cz4hvF8Pt6ZJSef0bNDrmO/view?usp=sharing"
+            href="https://drive.google.com/file/d/13y8IQi8otzJF3RZEkMwoHyAvUzvaIdO0/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
           >
